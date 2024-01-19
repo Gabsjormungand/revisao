@@ -5,13 +5,56 @@
     width: 150px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .caixa {
     background-color: darkviolet;
     width: 500px;
 }
 
 .caixa-com-padding {
-    background-color: rgb(153, 0, 145);
     padding: 0 50px;
     width: 500px;
 }
+
+.faixa {
+    border: 1px solid #f700b9;
+    height: 100px;
+    margin: 40px auto;
+    width: 400px;
+}
+
+.faixa h1{
+    background-color: #360099;
+    color: #FFF;
+    font-size: 1.2em;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 420px;
+    margin-top: 13px;
+}
+
+.faixa h1::before {
+    border-color: transparent #360099 #360099 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+
+.faixa h1::after {
+    border-color: transparent transparent #360099 #360099;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: -10px;
+}
+
